@@ -5,7 +5,7 @@ A movie browsing and watchlist app built with React and Vite. Every UI component
 ## Progress
 
 - [x] Movie card grid: responsive layout, with fallbacks for a missing poster, release date or rating
-- [ ] Live search
+- [x] Live search: filters by title as you type, ignoring case and extra spaces
 - [ ] Trending movies from the TMDB API
 - [ ] Routing, sidebar and pages
 - [ ] Dark mode and saved preferences
