@@ -1,16 +1,16 @@
-# Movie Watchlist Hub
+# TV Show Watchlist Hub
 
-A movie browsing and watchlist app built with React and Vite. Every UI component (cards, grid, sidebar, table, select, multi-select, modal, drawer, carousel) and every custom hook (`useFetch`, `usePost`, `useLocalStorage`, `useCookies`, `useTimeout`, `useInterval`, `useAutoRefresh`, `useClickOutside`) is written by hand, without a UI library.
+A TV show browsing and watchlist app built with React and Vite, using real data from the free [TVmaze API](https://www.tvmaze.com/api). Every UI component (cards, grid, sidebar, table, select, multi-select, modal, drawer, carousel) and every custom hook (`useFetch`, `usePost`, `useLocalStorage`, `useCookies`, `useTimeout`, `useInterval`, `useAutoRefresh`, `useClickOutside`) is written by hand, without a UI library.
 
 ## Progress
 
-- [x] Movie card grid: responsive layout, with fallbacks for a missing poster, release date or rating
+- [x] Show card grid: responsive layout, with fallbacks for a missing poster, premiere date or rating
 - [x] Live search: filters by title as you type, ignoring case and extra spaces
-- [ ] Trending movies from the TMDB API
+- [ ] Real shows from the TVmaze API, with a reusable `useFetch` hook and a data-mapping layer
 - [ ] Routing, sidebar and pages
 - [ ] Dark mode and saved preferences
 - [ ] Watchlist table with sorting and pagination
-- [ ] Genre filters, reviews, movie details drawer, carousel
+- [ ] Genre filters, reviews, show details drawer, carousel
 
 ## Tech
 
@@ -20,7 +20,7 @@ React 19, Vite, React Router, json-server (a local REST API for the watchlist an
 
 ```bash
 npm install
-cp .env.example .env   # then add your TMDB API key
+cp .env.example .env   # no API key needed
 npm run dev            # http://localhost:5173
 ```
 

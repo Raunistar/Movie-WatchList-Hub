@@ -1,26 +1,26 @@
-import MovieGrid from "./components/MovieGrid";
+import ShowGrid from "./components/ShowGrid";
 import { useState } from "react";
-import { sampleMovies } from "./data/sampleMovies";
+import { sampleShows } from "./data/sampleShows";
 import SearchBar from "./components/SearchBar";
 function App() {
   const [query, setQuery] = useState("");
   const search = query.trim().toLowerCase();
 
-  const visibleMovies = sampleMovies.filter((movie) =>
-    movie.title.toLowerCase().includes(search),
+  const visibleShows = sampleShows.filter((show) =>
+    show.title.toLowerCase().includes(search),
   );
   return (
     <main className="app">
-      <h1>Movie Watchlist Hub</h1>
+      <h1>TV Show Watchlist Hub</h1>
       <SearchBar value={query} onChange={setQuery} />
       <p>
         {search === ""
-          ? `Showing all ${sampleMovies.length} movies`
-          : `Showing ${visibleMovies.length} of ${sampleMovies.length} movies`}
+          ? `Showing all ${sampleShows.length} shows`
+          : `Showing ${visibleShows.length} of ${sampleShows.length} shows`}
       </p>
-      <MovieGrid
-        movies={visibleMovies}
-        emptyMessage={`No movies match "${query.trim()}"`}
+      <ShowGrid
+        shows={visibleShows}
+        emptyMessage={`No shows match "${query.trim()}"`}
       />
     </main>
   );

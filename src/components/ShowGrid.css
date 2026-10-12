@@ -1,10 +1,10 @@
-.movie-grid {
+.show-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .movie-grid {
+  .show-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

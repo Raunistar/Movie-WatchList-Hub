@@ -2,14 +2,14 @@ import "./SearchBar.css";
 function SearchBar({ value, onChange }) {
   return (
     <section className="search-bar">
-      <label htmlFor="search-input">Search Movies</label>
+      <label htmlFor="search-input">Search Shows</label>
       <input
         type="search"
         id="search-input"
         className="search-bar-input"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Search Movies..."
+        placeholder="Search shows..."
       />
 
       {value !== "" && (
