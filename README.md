@@ -6,8 +6,8 @@ A TV show browsing and watchlist app built with React and Vite, using real data 
 
 - [x] Show card grid: responsive layout, with fallbacks for a missing poster, premiere date or rating
 - [x] Live search: filters by title as you type, ignoring case and extra spaces
-- [ ] Real shows from the TVmaze API, with a reusable `useFetch` hook and a data-mapping layer
-- [ ] Routing, sidebar and pages
+- [x] Real shows from the TVmaze API, with a reusable `useFetch` hook and a data-mapping layer
+- [ ] Streaming-style home (Top 10 and genre rows), Explore page and routing
 - [ ] Dark mode and saved preferences
 - [ ] Watchlist table with sorting and pagination
 - [ ] Genre filters, reviews, show details drawer, carousel
